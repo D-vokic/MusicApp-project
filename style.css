@@ -1,0 +1,311 @@
+/* =======
+VARIABLES
+========= */
+:root {
+  --primaryColor: #0b193c;
+  --secondaryColor: #f91257;
+}
+
+/* ===========================
+DEFAULT STYLES - GLOBAL STYLES
+============================== */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  /* CSS reset */
+  transition: 0.5s linear;
+}
+
+body {
+  font-size: 16px;
+  line-height: 1.5;
+  background-color: white;
+  font-family: 'Montserrat', sans-serif;
+}
+a {
+  text-decoration: none;
+}
+ul {
+  list-style-type: none;
+}
+button {
+  font-size: 1.1rem;
+  padding: 1rem 1.5rem;
+  border: none;
+  cursor: pointer;
+  text-transform: uppercase;
+  font-weight: 500;
+  letter-spacing: 1.2px;
+  background-color: var(--secondaryColor);
+  color: white;
+  border-radius: 10px;
+}
+button:hover {
+  background-color: var(--primaryColor);
+}
+section {
+  padding: 70px 0;
+}
+img {
+  width: 100%;
+}
+.container {
+  width: 80%;
+  margin: auto;
+}
+.flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.section-title {
+  font-size: 2rem;
+}
+.section-title::after {
+  display: block;
+  content: '';
+  width: 100px;
+  height: 3px;
+  background-color: var(--secondaryColor);
+}
+
+/* =================
+NAV SECTION STARTS
+==================== */
+nav {
+  background-color: #09192c;
+  padding: 2rem 0;
+}
+nav > .nav-content > .logo {
+  font-size: 2rem;
+  color: var(--secondaryColor);
+  font-weight: 700;
+  text-transform: capitalize;
+}
+nav > .nav-content > .logo > span {
+  color: white;
+}
+nav > .nav-content > .logo > span:hover {
+  color: var(--secondaryColor);
+}
+nav > .nav-content > ul {
+  display: flex;
+  gap: 2rem;
+}
+nav > .nav-content > ul > li > a {
+  color: white;
+  text-transform: uppercase;
+}
+nav > .nav-content > ul > li > a:hover {
+  color: var(--secondaryColor);
+}
+/* ==============
+NAV SECTION ENDS
+================= */
+
+/* ==================
+HEADER SECTION STARTS
+===================== */
+.header {
+  background-color: var(--primaryColor);
+  height: 70vh;
+}
+.header .header-content {
+  height: 70vh;
+}
+.header > .header-content article h1 {
+  font-size: 2.5rem;
+  color: var(--secondaryColor);
+}
+.header > .header-content article h1 span {
+  color: white;
+}
+.header > .header-content article p {
+  color: white;
+  margin: 1rem 0;
+}
+.header > .header-content article {
+  flex-basis: 45%;
+}
+/* ==============
+HEADER SECTION ENDS
+================= */
+
+/* =================
+ABOUT SECTION STARTS
+==================== */
+.about {
+  flex-wrap: wrap;
+}
+.about > article {
+  flex-basis: 45%;
+}
+.about > article > p {
+  margin-bottom: 1rem;
+  text-align: justify;
+}
+/* =================
+ABOUT SECTION ENDS
+==================== */
+
+/* =================
+WORKS SECTION STARTS
+==================== */
+.works {
+  background-color: var(--primaryColor);
+  text-align: center;
+}
+.works .works-content h3 {
+  color: white;
+}
+.works .works-content h3::after {
+  margin: auto;
+}
+.works .works-wrapper {
+  margin-top: 2rem;
+  flex-wrap: wrap;
+}
+.works .works-wrapper article {
+  flex-basis: 30%;
+}
+.works .works-wrapper article i {
+  color: var(--secondaryColor);
+  font-size: 3rem;
+}
+.works .works-wrapper article h3 {
+  color: white;
+  font-size: 1.5rem;
+  padding: 1.5rem 0;
+}
+.works .works-wrapper article p {
+  color: white;
+  font-size: 0.8rem;
+}
+/* ====================
+WORKS SECTION ENDS
+======================= */
+
+/* =========================
+SUBSCRIPTION SECTION STARTS
+============================ */
+.subscription h3 + p {
+  flex-basis: 45%;
+}
+.subscription-header {
+  flex-wrap: wrap;
+}
+.subscription-header p {
+  text-align: justify;
+}
+.subscription-wrapper {
+  margin-top: 2rem;
+  flex-wrap: wrap;
+}
+.subscription-wrapper article {
+  text-align: center;
+  flex-basis: 22%;
+}
+.subscription-wrapper article img {
+  border-radius: 20px;
+}
+.subscription-wrapper article {
+  margin-top: 1rem;
+  font-weight: 800;
+  font-size: inherit;
+}
+/* ===========================
+SUBSCRIPTION SECTION ENDS
+============================== */
+
+/* ==========
+MEDIA QUERIES 
+============= */
+@media (max-width: 1400px) {
+  .subscription-wrapper article {
+    flex-basis: 45%;
+  }
+  .header {
+    height: 60vh;
+  }
+}
+@media (max-width: 1200px) {
+  .works .works-wrapper article {
+    flex-basis: 45%;
+  }
+}
+@media (max-width: 1130px) {
+  .header-content {
+    flex-direction: column;
+  }
+  .header {
+    height: 100vh;
+  }
+  .header img {
+    width: 500px;
+  }
+
+  .header > .header-content article {
+    text-align: center;
+    margin-top: 2rem;
+  }
+}
+@media (max-width: 992px) {
+  .about > article {
+    text-align: center;
+    flex-basis: 100%;
+  }
+  .works .works-wrapper article {
+    flex-basis: 100%;
+    margin-bottom: 2rem;
+  }
+  .subscription h3 + p {
+    flex-basis: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .nav-content {
+    flex-direction: column;
+  }
+  .header img {
+    width: 450px;
+  }
+  .about > article > h3 {
+    margin-bottom: 1rem;
+    font-style: 1.8rem;
+  }
+  .about > article > p {
+    margin-bottom: 1rem;
+  }
+  .subscription-wrapper article {
+    flex-basis: 100%;
+  }
+}
+@media (max-width: 576px) {
+  .header img {
+    width: 350px;
+  }
+
+  .header > .header-content article h1 {
+    font-size: 1.5rem;
+  }
+
+  .header > .header-content article p {
+    font-size: 0.8rem;
+  }
+
+  button {
+    font-size: 0.8rem;
+    padding: 0.7rem 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  nav > .nav-content > ul {
+    gap: 1rem;
+  }
+  nav > .nav-content > ul > li > a {
+    font-size: 0.8rem;
+  }
+}
