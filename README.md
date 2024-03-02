@@ -1,4 +1,4 @@
-# 2-MusicApp-project
+# MusicApp-project
 https://D-vokic.github.io/2-MusicApp-project/
 
 Hi, I am Duško.
