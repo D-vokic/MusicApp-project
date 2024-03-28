@@ -1,5 +1,5 @@
 # MusicApp-project
-https://D-vokic.github.io/2-MusicApp-project/
+https://d-vokic.github.io/MusicApp-project/
 
 Hi, I am Duško.
 ![Hi](https://github.com/Duskorsl/2-MusicApp-project/assets/105879280/9acd676d-24c0-49d7-9937-02fa06cdef5e)
