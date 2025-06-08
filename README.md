@@ -1,5 +1,5 @@
 # MusicApp-project
-https://d-vokic.github.io/MusicApp-project/
+
 You can view a live demo of this project [here](https://d-vokic.github.io/MusicApp-project/).
 
 
